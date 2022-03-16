@@ -19,6 +19,7 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: cpu
+  namespace: app
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
